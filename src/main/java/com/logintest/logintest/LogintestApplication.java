@@ -11,4 +11,8 @@ public class LogintestApplication {
         SpringApplication.run(LogintestApplication.class, args);
     }
 
+
+    /**
+     * 这个启动类
+     */
 }
