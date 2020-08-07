@@ -34,7 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         /**
          * 当出现越级访问时，跳转到登录页面
          */
-        security.formLogin();
+        security.formLogin().loginPage("http://localhost:8848/login/login");
 
     }
 
