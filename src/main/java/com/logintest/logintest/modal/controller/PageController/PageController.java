@@ -30,10 +30,6 @@ public class PageController {
     public String Login(){
         return "pages/login";
     }
-    @GetMapping("/login")
-    public String Login01(){
-        return "pages/login";
-    }
 
     /**
      * 跳转不同的地方

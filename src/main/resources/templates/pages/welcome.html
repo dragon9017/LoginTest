@@ -7,6 +7,12 @@
 <body>
 <h1 align="center">欢迎光临瓦尔哈拉-众神管理系统</h1>
 <h2 align="center">凡人，如果想查看众神系统 <a th:href="@{/login/login}">请登记</a></h2>
+<a th:href="@{/logout}">
+    <i></i>注销
+</a>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="注销">
+</form>
 <hr>
 
 <h3>巨人族</h3>

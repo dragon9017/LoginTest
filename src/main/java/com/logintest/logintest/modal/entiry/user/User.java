@@ -7,12 +7,14 @@ package com.logintest.logintest.modal.entiry.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 用户表
  */
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class User {
     /**
      * 用户名
@@ -32,4 +34,36 @@ public class User {
      * 权限分为三个等级，1，2，3
      */
     private String power;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getPower() {
+        return power;
+    }
+
+    public void setPower(String power) {
+        this.power = power;
+    }
 }

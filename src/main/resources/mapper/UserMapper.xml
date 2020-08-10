@@ -10,4 +10,8 @@
     <select id="SelectPowerById"  resultType="string" parameterType="integer">
 select power from login_test where id=#{id}
     </select>
+
+    <select id="SelectUserListByName" resultMap="UserResult" parameterType="string">
+        select * from login_test where name=#{name}
+    </select>
 </mapper>

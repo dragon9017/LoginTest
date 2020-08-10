@@ -1,4 +1,5 @@
 package com.logintest.logintest.modal.service.serviceimp;
+import com.logintest.logintest.modal.entiry.user.User;
 import com.logintest.logintest.modal.mapper.userMapper.UserMapper;
 import com.logintest.logintest.modal.service.userService.UserService;
 import org.springframework.stereotype.Service;
@@ -17,5 +18,11 @@ public class UserServiceimp implements UserService {
     public String SelectPowerById(Integer id) {
         String s = userMappe.SelectPowerById(id);
         return s;
+    }
+
+    @Override
+    public User SelectUserListByName(String name) {
+        User user = userMappe.SelectUserListByName(name);
+        return user;
     }
 }
